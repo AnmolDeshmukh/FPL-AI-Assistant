@@ -1,0 +1,31 @@
+# Ignore data and large external repositories
+/data/
+/Fantasy-Premier-League/
+/fromCOLAB/**/data/
+/fromCOLAB/FPL model/predictions.csv
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+
+# Model artifacts (optional - keep if you want to include model files)
+# *.pkl
+
+# Logs
+*.log
+
+# Ignore compiled assets
+*.so
+
+# Pipenv
+Pipfile.lock

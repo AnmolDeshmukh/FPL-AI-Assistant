@@ -1,9 +1,10 @@
 # Ignore data and large external repositories
 /data/
 /Fantasy-Premier-League/
-/fromCOLAB/**/data/
-/fromCOLAB/FPL model/predictions.csv
-fromCOLAB/FPL_Project.ipynb
+/FPL model/data/
+/FPL model/Fantasy-Premier-League/
+/FPL model/predictions.csv
+/fromCOLAB/
 
 # Python artifacts
 __pycache__/

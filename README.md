@@ -25,7 +25,7 @@ This project is an end-to-end AI system designed to solve the Fantasy Premier Le
 ## 📂 Project Structure
 
 ```text
-fromCOLAB/
+.
 ├── FPL_Project_portable.ipynb   # 🧠 Main notebook (cells 1–7) with relative paths
 ├── README.md
 ├── FPL model/                   # Working directory used by the notebook

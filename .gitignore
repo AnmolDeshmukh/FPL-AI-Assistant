@@ -3,6 +3,7 @@
 /Fantasy-Premier-League/
 /fromCOLAB/**/data/
 /fromCOLAB/FPL model/predictions.csv
+fromCOLAB/FPL_Project.ipynb
 
 # Python artifacts
 __pycache__/

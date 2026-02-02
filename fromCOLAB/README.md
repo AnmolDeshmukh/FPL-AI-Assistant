@@ -25,13 +25,16 @@ This project is an end-to-end AI system designed to solve the Fantasy Premier Le
 ## 📂 Project Structure
 
 ```text
-├── data/                        # Generated CSVs (Training data & Predictions)
-├── Fantasy-Premier-League/      # (External) Vaastav Anand's historical data repo
-├── FPL_Project.ipynb            # 🧠 MAIN NOTEBOOK (Run this)
-├── fetch_live_data.py           # Script: Scrapes live prices/injuries from FPL API
-├── merge_data.py                # Script: Merges history + live data for training
-├── fpl_model_v2.pkl             # Saved XGBoost model (generated after training)
-└── predictions.csv              # The latest output predictions for next GW
+fromCOLAB/
+├── FPL_Project_portable.ipynb   # 🧠 Main notebook (cells 1–7) with relative paths
+├── README.md
+├── FPL model/                   # Working directory used by the notebook
+│   ├── fetch_live_data.py       # Script: Scrapes live prices/injuries from FPL API
+│   ├── merge_data.py            # Script: Merges history + live data for training
+│   ├── data/                    # Generated CSVs (training + predictions) [ignored]
+│   ├── Fantasy-Premier-League/  # (External) Vaastav Anand's historical data repo [ignored]
+│   ├── fpl_model_v2.pkl         # Saved XGBoost model (generated after training)
+│   └── predictions.csv          # Latest output predictions for next GW
 ```
 
 🛠️ **Installation & Setup**
@@ -61,7 +64,12 @@ git clone [https://github.com/vaastav/Fantasy-Premier-League.git](https://github
 
 🖥️ **How to Use**
 
-The entire pipeline is controlled via the Jupyter Notebook `FPL_Project.ipynb`.
+The pipeline is controlled via the Jupyter Notebook `FPL_Project_portable.ipynb` (kept to cells 1–7).
+
+**Notebook path variables**
+
+- `FPL_PROJECT_PATH` (optional): where the notebook should `cd` before running scripts. Defaults to `./FPL model` relative to the notebook.
+- `FPL_HISTORY_REPO` (optional): path or folder name of Vaastav's data clone. Defaults to `Fantasy-Premier-League` inside `FPL_PROJECT_PATH`.
 
 **Step 1: Update Data**
 
